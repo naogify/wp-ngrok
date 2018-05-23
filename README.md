@@ -2,18 +2,8 @@
 Setup [ngrok](https://ngrok.com/) instantly at [VCCW](http://vccw.cc/).
 
 ## Settings
-Sign up ngrok, and follow the instruction of getting strarted.
 
-1. Download ngrok from the URL bellow.
-https://dashboard.ngrok.com/get-started
-
-2. Connect to your account.
-
-```
-$ ./ngrok authtoken < your-token >
-```
-
-3.Install ngrok.
+Install ngrok by Homebrew.
 
 ```
 $ brew cask install ngrok
@@ -36,6 +26,6 @@ Then it will publish temporary url that anyone can access. You can easily unpubl
 
 ## NOTE
 This shell scripts will install [relative-url](https://wordpress.org/plugins/relative-url/) pluguin that replace WordPres's absolute url to relative url.
-Then change ```WP_SITEURL``` & ```WP_HOME``` to ```http://' . $_SERVER['HTTP_HOST']``` by adding some scripts to wp-config.php.
+Then change ```WP_SITEURL``` & ```WP_HOME``` to ```http://' . $_SERVER['HTTP_HOST']``` by adding some scripts to wp-config.php(This plugin modifies the wp-config.php at same directory where Vagrantfile is located).
 
-So, PLEASE NOTE when you move the WordPress to your production environment, remove [relative-url](https://wordpress.org/plugins/relative-url/) plugin, and delete ```define('WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST']);``` ```define('WP_HOME', 'http://' . $_SERVER['HTTP_HOST']); ``` from your wp-config.php.
+So, PLEASE NOTE when you move the WordPress to your production environment, remove [relative-url](https://wordpress.org/plugins/relative-url/) plugin.
