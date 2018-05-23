@@ -23,6 +23,8 @@ $ bash wp-ngrok.sh
 It will ask you to type your development url.　So, please type it.
 Then it will publish temporary url that anyone can access. You can easily unpublish the url by closing the terminal.
 
+Please check https://ngrok.com/docs to get more information about ngrok.
+
 
 ## NOTE
 This shell script will install [relative-url](https://wordpress.org/plugins/relative-url/) pluguin to replace WordPres's absolute url to relative url.
