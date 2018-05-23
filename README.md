@@ -26,6 +26,6 @@ Then it will publish temporary url that anyone can access. You can easily unpubl
 
 ## NOTE
 This shell scripts will install [relative-url](https://wordpress.org/plugins/relative-url/) pluguin that replace WordPres's absolute url to relative url.
-Then change ```WP_SITEURL``` & ```WP_HOME``` to ```http://' . $_SERVER['HTTP_HOST']``` by adding some scripts to wp-config.php(This plugin modifies the wp-config.php at same directory where Vagrantfile is located).
+Then change ```WP_SITEURL``` & ```WP_HOME``` to ```http://' . $_SERVER['HTTP_HOST']``` by adding some scripts to wp-config.php(This ```wp-config.php``` is the one at same directory where Vagrantfile is located).
 
 So, PLEASE NOTE when you move the WordPress to your production environment, remove [relative-url](https://wordpress.org/plugins/relative-url/) plugin.
